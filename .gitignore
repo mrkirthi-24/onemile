@@ -31,7 +31,7 @@ media
 
 # Environments
 .venv
-/.env
+server/.env
 /local
 ENV/
 env.bak/
