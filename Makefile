@@ -1,22 +1,22 @@
-.PHONY install
+.PHONY: install
 install:
 	poetry install --no-root
 
-.PHONY migrate
+.PHONY: migrate
 migrate:
 	poetry run python server/manage.py migrate
 
-.PHONY migrations
+.PHONY: migrations
 migrations:
 	poetry run python server/manage.py makemigrations
 
-.PHONY superuser
+.PHONY: superuser
 superuser:
 	poetry run python server/manage.py createsuperuser
 
-.PHONY runserver
+.PHONY: runserver
 runserver:
 	poetry run python server/manage.py runserver
 
-.PHONY update
+.PHONY: update
 update: install migrate ;
