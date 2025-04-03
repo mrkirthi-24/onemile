@@ -9,7 +9,7 @@ environ.Env.read_env(Path(__file__).resolve().parent.parent.parent / ".env")
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 DEBUG = False
-#hey you need to provide a secret key in every environment
+# hey you need to provide a secret key in every environment
 SECRET_KEY = NotImplemented
 
 ALLOWED_HOSTS = ['*']
