@@ -61,6 +61,23 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-environ"
+version = "0.12.0"
+description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
+optional = false
+python-versions = "<4,>=3.9"
+groups = ["main"]
+files = [
+    {file = "django_environ-0.12.0-py2.py3-none-any.whl", hash = "sha256:92fb346a158abda07ffe6eb23135ce92843af06ecf8753f43adf9d2366dcc0ca"},
+    {file = "django_environ-0.12.0.tar.gz", hash = "sha256:227dc891453dd5bde769c3449cf4a74b6f2ee8f7ab2361c93a07068f4179041a"},
+]
+
+[package.extras]
+develop = ["coverage[toml] (>=5.0a4)", "furo (>=2024.8.6)", "pytest (>=4.6.11)", "setuptools (>=71.0.0)", "sphinx (>=5.0)", "sphinx-notfound-page"]
+docs = ["furo (>=2024.8.6)", "sphinx (>=5.0)", "sphinx-notfound-page"]
+testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)", "setuptools (>=71.0.0)"]
+
+[[package]]
 name = "django-filter"
 version = "25.1"
 description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
@@ -374,4 +391,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13,<4.0"
-content-hash = "95144a79861e7301d57c2b5a6a4e30a3d97b2aa6da38b2252b41a5aa3d3c3667"
+content-hash = "006e84018d391cbb8208d9645735047dd384c94055b20133400b1e5eacfeed7d"
