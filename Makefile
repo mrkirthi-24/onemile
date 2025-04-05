@@ -14,8 +14,8 @@ migrations:
 superuser:
 	poetry run python server/manage.py createsuperuser
 
-.PHONY: runserver
-runserver:
+.PHONY: start
+start:
 	poetry run python server/manage.py runserver
 
 .PHONY: install-pre-commit

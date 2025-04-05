@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+
+  onemile_db:
+    image: postgres:latest
+    container_name: onemile_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+        - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  onemile_data:
+    driver: local
