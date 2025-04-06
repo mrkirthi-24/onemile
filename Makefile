@@ -29,3 +29,8 @@ lint:
 
 .PHONY: update
 update: install migrate install-pre-commit lint;
+
+.PHONY: up-depends
+up-depends:
+	test -f .env || touch .env
+	docker compose -f docker-compose.dev.yml up --force-recreate onemile_db

@@ -1,10 +1,8 @@
 import os
-from pathlib import Path
 
 from split_settings.tools import include, optional
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-print(f"BASE_DIR: {BASE_DIR}")
+from .paths import BASE_DIR
 
 ENVVAR_SETTINGS_PREFIX = "CORESETTINGS_"
 
