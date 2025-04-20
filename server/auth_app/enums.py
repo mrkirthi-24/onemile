@@ -3,7 +3,7 @@ from django.db import models
 
 class ReferralEnums(models.TextChoices):
     """
-    Enum for reference types.
+    Enum for referral types.
     """
     Google = "Google"
     Twitter = "Twitter"
